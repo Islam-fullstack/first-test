@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(54, 50, 50);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(94, 94, 255);
+    font-size: 100px;
+    animation: hello 2s ease-in-out infinite;
+    /* margin: 0 auto; */
+}
+
+h1:hover{
+    
+}
+
+@keyframes hello{
+    0%{
+        transform: translateX(300px) scale(0.4);
+        text-shadow: 0px 0px 0px rgba(79, 58, 119, 0.5);
+    }
+    50%{
+        transform: translateX(0px) scale(1.2);
+        text-shadow: 0px 0px 10px rgba(104, 75, 151, 0.5);
+    }
+    100%{
+        transform: translateX(300px) scale(0.4);
+        text-shadow: 15px 15px 40px rgba(87, 54, 126, 0.5);
+    }
+}
